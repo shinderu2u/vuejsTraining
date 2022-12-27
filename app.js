@@ -2,7 +2,8 @@ const app = Vue.createApp({
     //data, functions
     data(){
         return{
-            title: 'The Final Empire'
+            title: 'The Final Empire',
+            age: 10
         }
     }
 })

@@ -10,7 +10,10 @@
     <h1>HELLO</h1>
     asdasd
     <div id="app">
-        <p>{{title}}</p>
+        <p>{{title}}-{{age}}</p>
+
+        <button v-on:click="age++">Increase Age</button>
+        <button v-on:click="age--">Decrease Age</button>
     </div>
 
     <script src="app.js"></script>
