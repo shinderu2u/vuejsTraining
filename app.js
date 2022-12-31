@@ -3,7 +3,7 @@ const app = Vue.createApp({
     data(){
         return{
             showBooks : true,
-            title: 'The Final Empire',
+            title: 'The Kudos with thier DOGG',
             age: 10
         }
     },
