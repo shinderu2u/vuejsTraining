@@ -5,15 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Vuejs</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        .box {
+            padding: 100px 0;
+            width: 400px;
+            text-align: center;
+            background-color: beige;
+            margin:  20px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <h1>HELLO</h1>
-    asdasd
     <div id="app">
-        <p>{{title}}-{{age}}</p>
+        <div v-if ="showBooks">
+            <p>{{title}} - {{ age }}</p>
+        </div>
 
-        <button v-on:click="age++">Increase Age</button>
-        <button v-on:click="age--">Decrease Age</button>
+        <button @click="toggleHideBooks">
+            <span v-if ="showBooks">Hide Books Title</span>
+            <span v-else>Show Books Title</span>
+        </button>
+
+        <br>
+
+        <!-- MOUSE EVENT -->
+
+        <div class="box" @mouseover="handleEvent">Mouse Over (Enter)</div>
+        <div class="box" @mouseleave="handleEvent">Mouse Leave</div>
+        <div class="box" @dblclick="handleEvent">double click</div>
+        <div class="box"></div>
+
     </div>
 
     <script src="app.js"></script>
