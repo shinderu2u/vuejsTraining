@@ -32,10 +32,10 @@
 
         <!-- MOUSE EVENT -->
 
-        <div class="box" @mouseover="handleEvent">Mouse Over (Enter)</div>
+        <div class="box" @mouseover="handleEvent($event, 3)">Mouse Over (Enter)</div>
         <div class="box" @mouseleave="handleEvent">Mouse Leave</div>
         <div class="box" @dblclick="handleEvent">double click</div>
-        <div class="box"></div>
+        <div class="box" @mousemove="handleMousemove">Position {{x}}--{{y}}</div>
 
     </div>
 
